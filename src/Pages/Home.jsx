@@ -11,6 +11,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import emailjs from 'emailjs-com';
 import SimpleSlider from '../Components/CarouselHome';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const form = useRef();
@@ -56,10 +57,6 @@ const Home = () => {
       });
   };
 
-  const AboutButton = () => {
-    window.location.href = 'about';
-  };
-
   return (
     <div className="">
       <div className=''>
@@ -93,8 +90,8 @@ const Home = () => {
                 From intimate gatherings to grand celebrations, we are dedicated to bringing your unique vision to life. Our passion for floral artistry drives us to create bespoke arrangements that perfectly complement your style, theme, and ambiance, ensuring every detail is a reflection of your personality and taste.
               </p>
               <div className="grid justify-between md:grid-cols-2 grid-cols-1">
-                <div>
-                  <button onClick={AboutButton} className="border border-[#FD8901] bg-[#FD8901] transition duration-500 hover:scale-125 hover:text-white px-3 py-2 my-5 rounded-3xl font-semibold shine-effect">Know More About Us</button>
+                <div className='py-3'>
+                <Link to="/about" className="border border-[#FD8901] bg-[#FD8901] transition duration-500 hover:scale-125 hover:text-white px-3 py-2 my-5 rounded-3xl font-semibold shine-effect">Know More About Us</Link>
                 </div>
               </div>
             </div>

@@ -16,6 +16,7 @@ import Navbar from './Components/Navbar';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ScrollToTop from './Components/ScrollToTop';
 AOS.init();
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <img src={url} onClick={handleCall} className='phone-button bg-blue-500 md:hover:pl-6 md:hover:pr-3 hover:cursor-pointer pl-2 pr-2 md:py-2 md:pl-3 md:pr-2 rounded-l-full'></img>
       </div>
       <TransitionWrapper>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />

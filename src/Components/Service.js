@@ -16,13 +16,11 @@ import ebg2 from '../assets/Entrance/IMG_2393.JPG';
 import ebg3 from '../assets/Entrance/IMG_2394.JPG';
 import ebg4 from '../assets/Entrance/IMG_2395.JPG';
 import Carousel from './Carousel';
+import { Link } from 'react-router-dom';
 
 
 const Service = () => {
 
-    const onClickButton = () => {
-        window.location.href = "/services";
-    }
     return (
         <div className='flex justify-evenly items-center'>
             <div>
@@ -44,7 +42,7 @@ const Service = () => {
                             </p>
                         </div>
                         <div className='flex justify-center'>
-                            <button onClick={onClickButton} className='shine-effect hover:scale-110 border border-[#FD8901] bg-[#FFEF99] hover:bg-[#FD8901] hover:text-white px-8 py-2 mt-3 rounded-3xl font-semibold'>Read More</button>
+                            <Link to='/services' className='shine-effect hover:scale-110 border border-[#FD8901] bg-[#FFEF99] hover:bg-[#FD8901] hover:text-white px-8 py-2 mt-3 rounded-3xl font-semibold'>Read More</Link>
                         </div>
                     </div>
                     <div className='w-72 shadow-2xl drop-shadow-2xl border-gray-800 rounded-3xl p-4 hover:scale-105 transition transform flex flex-col justify-between'>
@@ -60,7 +58,7 @@ const Service = () => {
                             </p>
                         </div>
                         <div className='flex justify-center'>
-                            <button onClick={onClickButton} className='shine-effect hover:scale-110 border border-[#FD8901] bg-[#FFEF99] hover:bg-[#FD8901] hover:text-white px-8 py-2 mt-3 rounded-3xl font-semibold'>Read More</button>
+                            <Link to='/services' className='shine-effect hover:scale-110 border border-[#FD8901] bg-[#FFEF99] hover:bg-[#FD8901] hover:text-white px-8 py-2 mt-3 rounded-3xl font-semibold'>Read More</Link>
                         </div>
                     </div>
                     <div className='w-72 shadow-2xl drop-shadow-2xl border-gray-800 rounded-3xl p-4 hover:scale-105 transition transform flex flex-col justify-between'>
@@ -76,7 +74,7 @@ const Service = () => {
                             </p>
                         </div>
                         <div className='flex justify-center'>
-                            <button onClick={onClickButton} className='shine-effect hover:scale-110 border border-[#FD8901] bg-[#FFEF99] hover:bg-[#FD8901] hover:text-white px-8 py-2 mt-3 rounded-3xl font-semibold'>Read More</button>
+                            <Link to='/services' className='shine-effect hover:scale-110 border border-[#FD8901] bg-[#FFEF99] hover:bg-[#FD8901] hover:text-white px-8 py-2 mt-3 rounded-3xl font-semibold'>Read More</Link>
                         </div>
                     </div>
                     <div className='w-72 shadow-2xl drop-shadow-2xl border-gray-800 rounded-3xl p-4 hover:scale-105 transition transform flex flex-col justify-between'>
@@ -91,7 +89,7 @@ const Service = () => {
                             </p>
                         </div>
                         <div className='flex justify-center'>
-                            <button onClick={onClickButton} className='shine-effect hover:scale-110 border border-[#FD8901] bg-[#FFEF99] hover:bg-[#FD8901] hover:text-white px-8 py-2 mt-3 rounded-3xl font-semibold'>Read More</button>
+                            <Link to='/services' className='shine-effect hover:scale-110 border border-[#FD8901] bg-[#FFEF99] hover:bg-[#FD8901] hover:text-white px-8 py-2 mt-3 rounded-3xl font-semibold'>Read More</Link>
                         </div>
                     </div>
                 </div>
