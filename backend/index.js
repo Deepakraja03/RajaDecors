@@ -7,7 +7,7 @@ const app = express();
 
 // Set up CORS with credentials
 const corsOptions = {
-  origin: ['https://www.rajadecors.in', 'https://raja-decors-omega.vercel.app/'],
+  origin: ['https://www.rajadecors.in', 'https://raja-decors-omega.vercel.app'],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   optionsSuccessStatus: 204,
