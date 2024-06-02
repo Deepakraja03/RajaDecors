@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 const MobileMenu = ({ isOpen, onClose }) => {
   const location = useLocation();
@@ -23,21 +23,21 @@ const MobileMenu = ({ isOpen, onClose }) => {
         </button>
       </div>
       <nav className="flex flex-col items-center text-xl mt-8 space-y-4">
-        <a href="/" className={getLinkClassName("/")} onClick={onClose}>
+        <Link to="/" className={getLinkClassName("/")} onClick={onClose}>
           Home
-        </a>
-        <a href="/services" className={getLinkClassName("/services")} onClick={onClose}>
+        </Link>
+        <Link to="/services" className={getLinkClassName("/services")} onClick={onClose}>
           Services
-        </a>
-        <a href="/gallery" className={getLinkClassName("/gallery")} onClick={onClose}>
+        </Link>
+        <Link to="/gallery" className={getLinkClassName("/gallery")} onClick={onClose}>
           Gallery
-        </a>
-        <a href="/about" className={getLinkClassName("/about")} onClick={onClose}>
+        </Link>
+        <Link to="/about" className={getLinkClassName("/about")} onClick={onClose}>
           About us
-        </a>
-        <a href="/contact" className={getLinkClassName("/contact")} onClick={onClose}>
+        </Link>
+        <Link to="/contact" className={getLinkClassName("/contact")} onClick={onClose}>
           Contact
-        </a>
+        </Link>
       </nav>
     </div>
   );
